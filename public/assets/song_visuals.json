@@ -1,0 +1,54 @@
+[
+	{
+		"isDefault": true,
+		"background": {
+			"clear": "gameplay/backgrounds/bg_clear.png",
+			"miss": "gameplay/backgrounds/bg_miss.png"
+		},
+		"feverCrowd": "gameplay/dancers/1000063947.png",
+		"chibi": {
+			"clear": {
+				"sprite": "ui/results/1000063948.png",
+				"rows": 20,
+				"cols": 6,
+				"characterRow": 1 
+			},
+			"fail": {
+				"sprite": "ui/results/1000063948.png",
+				"rows": 20,
+				"cols": 6,
+				"characterRow": 2 
+			}
+		},
+		"randomDancers": [
+			{
+				"sprite": "gameplay/dancers/1000063944.png",
+				"rows": 10,
+				"cols": 12,
+				"characterRow": 1
+			},
+			{
+				"sprite": "gameplay/dancers/1000063944.png",
+				"rows": 10,
+				"cols": 12,
+				"characterRow": 2
+			},
+			{
+				"sprite": "gameplay/dancers/1000063944.png",
+				"rows": 10,
+				"cols": 12,
+				"characterRow": 3
+			}
+		]
+	},
+	{
+		"songId": "YOUR_SONG_ID_HERE",
+		"dancer": {
+			"sprite": "gameplay/dancers/kakashi.png",
+			"rows": 1,
+			"cols": 6,
+			"characterRow": 1
+		}
+	}
+]
+

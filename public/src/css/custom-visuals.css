@@ -1,0 +1,88 @@
+/* ==============================================
+=== CUSTOM VISUALS FOR TAIKO WEB (TNT7 STYLE) ===
+==============================================
+*/
+
+/* --- 1. General Styling & New Visual Layers --- */
+#dancer-container, #fever-crowd, #gogo-splash, #results-chibi {
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 800px;
+	height: 300px;
+	background-repeat: no-repeat;
+	display: none;
+	pointer-events: none;
+	z-index: 0;
+}
+/* ... (rest of the general and gameplay CSS from previous steps) ... */
+
+
+/* --- 2. NEW: Taiko 7 Song Select Screen --- */
+#song-select {
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+	transition: background-image 0.5s;
+	overflow: hidden;
+	position: relative;
+}
+#song-select-bg {
+	position: absolute;
+	top: 0; left: 0; width: 100%; height: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: background-image 0.3s ease-out;
+}
+#song-sel-canvas {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	z-index: 1;
+}
+#song-sel-selectable {
+	position: absolute;
+	opacity: 1;
+	text-align: center;
+	word-break: break-all;
+	white-space: pre-wrap;
+	user-select: all;
+	cursor: text;
+	color: transparent;
+	z-index: 2;
+}
+
+/* --- 3. NEW: Warning Screen --- */
+#warning-screen {
+	position: absolute;
+	top: 0; left: 0; width: 100%; height: 100%;
+	background-color: #f8d321;
+	z-index: 100;
+	display: none; /* Controlled by JavaScript */
+}
+#warning-screen.visible {
+	display: block;
+}
+.warning-text {
+	position: absolute;
+	top: 30%; left: 50%;
+	transform: translateX(-50%);
+	/* Further styling for text container */
+}
+.warning-dancer {
+	position: absolute;
+	bottom: 10%; left: 50%;
+	transform: translateX(-50%);
+	width: 150px;
+	height: 200px;
+	/* Animation will be handled here */
+}
+
+/* --- (Keep all the other animation keyframes from the previous version) --- */
+@keyframes splash_effect {
+	from { opacity: 1; transform: translateX(-50%) scale(0); }
+	to { opacity: 0; transform: translateX(-50%) scale(2); }
+}
+/* ... etc. ... */
+
